@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import Content from './content/Content';
 
 function App() {
+  const [theme, setTheme] = useState('light');
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  };
+
+  
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${theme}`}>
+    
+      <div>
+      <nav>
+        <ul className='nav-ul'>
+            <li className='nav-li'><h3>Where in the world?</h3></li>
+            <li className='nav-li' onClick={toggleTheme}>Dark Mode</li>
+        </ul>
+      </nav>
+    </div>
+      <Content/>
     </div>
   );
 }
