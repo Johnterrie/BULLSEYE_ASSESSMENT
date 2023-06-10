@@ -3,10 +3,10 @@ import './App.css';
 import Content from './content/Content';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('App');
   const toggleTheme = () => {
     if (theme === 'light') {
-      setTheme('dark');
+      setTheme('App');
     } else {
       setTheme('light');
     }
@@ -22,13 +22,13 @@ function App() {
     
       <div>
       <nav>
-        <ul className='nav-ul'>
+        <ul className={`nav-ul`}>
             <li className='nav-li'><h3>Where in the world?</h3></li>
-            <li className='nav-li' onClick={toggleTheme}>Dark Mode</li>
+            <li className='nav-li pointer' onClick={toggleTheme}>Dark Mode</li>
         </ul>
       </nav>
     </div>
-      <Content/>
+      <Content theme={theme}/>
     </div>
   );
 }
