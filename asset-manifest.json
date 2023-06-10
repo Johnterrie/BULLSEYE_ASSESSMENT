@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BULLSEYE_ASSESSMENT/static/css/main.ff01a195.css",
+    "main.js": "/BULLSEYE_ASSESSMENT/static/js/main.5e60bd8c.js",
+    "index.html": "/BULLSEYE_ASSESSMENT/index.html",
+    "main.ff01a195.css.map": "/BULLSEYE_ASSESSMENT/static/css/main.ff01a195.css.map",
+    "main.5e60bd8c.js.map": "/BULLSEYE_ASSESSMENT/static/js/main.5e60bd8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff01a195.css",
+    "static/js/main.5e60bd8c.js"
+  ]
+}
