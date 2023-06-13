@@ -1,4 +1,3 @@
-
 .name {
     font-weight: 900 ;
     margin-left: 30px;
@@ -15,6 +14,19 @@
 .light {
     background-color:  hsl(0, 0%, 100%);
     color:  #333;;
+}
+
+.notavailable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    color: #ffff ;
+    font-size: 2rem;
+}
+
+.content-div {
+    height: 45vh;
 }
 
 
